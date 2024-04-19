@@ -1,0 +1,2 @@
+defmodule QueryStats do
+end
