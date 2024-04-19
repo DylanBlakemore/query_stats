@@ -26,7 +26,7 @@ by adding `query_stats` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:query_stats, "~> 0.1.0"}
+    {:query_stats, "~> 0.1.0", only: [:test]}
   ]
 end
 ```
