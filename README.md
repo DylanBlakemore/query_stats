@@ -1,7 +1,7 @@
 # QueryStats
 
+![CI Pipeline](https://github.com/dylanblakemore/query_stats/actions/workflows/elixir.yml/badge.svg)
 [![Hex.pm](https://img.shields.io/hexpm/v/query_stats.svg)](https://hex.pm/packages/query_stats)
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/DylanBlakemore/query_stats/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/DylanBlakemore/query_stats/tree/main)
 [![Documentation](https://img.shields.io/badge/documentation-gray)](https://hexdocs.pm/query_stats/api-reference.html)
 
 QueryStats is a library that provides a way to track the number of queries executed by Ecto
