@@ -1,7 +1,8 @@
 defmodule QueryStats.HandlerTest do
   use ExUnit.Case
 
-  alias QueryStats.{Counter, Handler}
+  alias QueryStats.Counter
+  alias QueryStats.Handler
 
   describe "attach/1" do
     test "attaches the event handler" do

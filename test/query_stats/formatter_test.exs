@@ -1,7 +1,8 @@
 defmodule QueryStats.FormatterTest do
   use ExUnit.Case
 
-  alias QueryStats.{Counter, Formatter}
+  alias QueryStats.Counter
+  alias QueryStats.Formatter
 
   setup do
     Counter.start_link()

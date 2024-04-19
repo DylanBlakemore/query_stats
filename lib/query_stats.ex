@@ -34,7 +34,9 @@ defmodule QueryStats do
     SELECT: 5
   ```
   """
-  alias QueryStats.{Counter, Formatter, Handler}
+  alias QueryStats.Counter
+  alias QueryStats.Formatter
+  alias QueryStats.Handler
 
   @doc """
   Starts the QueryStats library.
