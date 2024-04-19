@@ -29,8 +29,7 @@ defmodule QueryStats.MixProject do
 
   defp package() do
     [
-      files:
-        ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE* license* CHANGELOG* changelog* src),
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*),
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/DylanBlakemore/query_stats"}
     ]
