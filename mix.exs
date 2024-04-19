@@ -4,7 +4,7 @@ defmodule QueryStats.MixProject do
   def project do
     [
       app: :query_stats,
-      version: "0.1.0",
+      version: "0.1.1",
       description: "Track Ecto queries in your test suite",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
