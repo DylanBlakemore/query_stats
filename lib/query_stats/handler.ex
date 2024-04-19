@@ -11,9 +11,9 @@ defmodule QueryStats.Handler do
   def attach(application) do
     :telemetry.attach(
       "query_stats",
-      [application, :sql, :query],
+      [application, :repo, :query],
       &__MODULE__.handle_event/4,
-      application
+      nil
     )
   end
 

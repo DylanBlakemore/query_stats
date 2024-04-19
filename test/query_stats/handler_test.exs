@@ -10,8 +10,8 @@ defmodule QueryStats.HandlerTest do
 
       assert [
                %{
-                 config: :my_app,
-                 event_name: [:my_app, :sql, :query],
+                 config: nil,
+                 event_name: [:my_app, :repo, :query],
                  function: _function,
                  id: "query_stats"
                }
