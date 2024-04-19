@@ -11,7 +11,9 @@ defmodule QueryStats.MixProject do
       deps: deps(),
       aliases: aliases(),
       preferred_cli_env: ["test.all": :test],
-      dialyzer: [plt_add_apps: [:mix]],
+      dialyzer: [
+        plt_add_apps: [:mix]
+      ],
       package: package(),
       source_url: "https://github.com/DylanBlakemore/query_stats",
       homepage_url: "https://github.com/DylanBlakemore/query_stats",
