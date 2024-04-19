@@ -20,7 +20,7 @@ defmodule QueryStats.Counter do
   def increment_type(type) do
     Agent.update(__MODULE__, fn state ->
       types = Map.update(state.types, type, 1, &(&1 + 1))
-      %{state | types: types}
+      %{state | types: types, total: state.total + 1}
     end)
   end
 
