@@ -1,6 +1,18 @@
 # QueryStats
 
-**TODO: Add description**
+QueryStats is a library that provides a way to track the number of queries executed by Ecto
+during test suite runs.
+
+After a run, it will output the total number of queries and the number of queries per type.
+
+## Output example
+
+```elixir
+Total queries: 10
+Query types:
+  INSERT: 5
+  SELECT: 5
+```
 
 ## Installation
 
@@ -15,7 +27,10 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/query_stats>.
+Then, in your `test_helper.exs` file, add the following line:
 
+```elixir
+QueryStats.start(:my_app)
+```
+
+Replace `:my_app` with the name of your application.
