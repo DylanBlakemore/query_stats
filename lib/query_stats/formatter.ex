@@ -1,6 +1,12 @@
 defmodule QueryStats.Formatter do
+  @moduledoc """
+  This module is responsible for formatting the output of the query stats.
+  """
   alias QueryStats.Counter
 
+  @doc """
+  Formats the output of the query stats.
+  """
   @spec format_output() :: String.t()
   def format_output do
     total = Counter.get_total()

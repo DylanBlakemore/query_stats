@@ -5,26 +5,37 @@ defmodule QueryStats.MixProject do
     [
       app: :query_stats,
       version: "0.1.0",
+      description: "Track Ecto queries in your test suite",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       aliases: aliases(),
       preferred_cli_env: ["test.all": :test],
       dialyzer: [plt_add_apps: [:mix]],
+      package: package(),
+      source_url: "https://github.com/DylanBlakemore/query_stats",
+      homepage_url: "https://github.com/DylanBlakemore/query_stats",
       test_coverage: [
         summary: [threshold: 95]
       ]
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       extra_applications: [:logger]
     ]
   end
 
-  # Run "mix help deps" to learn about dependencies.
+  defp package() do
+    [
+      files:
+        ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE* license* CHANGELOG* changelog* src),
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/DylanBlakemore/query_stats"}
+    ]
+  end
+
   defp deps do
     [
       {:ex_doc, "~> 0.31", only: :dev, runtime: false},

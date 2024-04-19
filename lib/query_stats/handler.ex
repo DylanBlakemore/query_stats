@@ -4,6 +4,9 @@ defmodule QueryStats.Handler do
   """
   alias QueryStats.Counter
 
+  @doc """
+  Attaches the handler to the application telemetry.
+  """
   @spec attach(atom()) :: :ok
   def attach(application) do
     :telemetry.attach(
@@ -14,6 +17,9 @@ defmodule QueryStats.Handler do
     )
   end
 
+  @doc """
+  Handles the query event by incrementing the query statistics.
+  """
   @spec handle_event(list(atom()), map(), map(), any()) :: :ok
   def handle_event(_event, _timings, query, _) do
     query_type =
